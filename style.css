@@ -42,6 +42,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 25px;
 }
+
 article {
   display: flex;
   flex-direction: column;
@@ -60,10 +61,24 @@ article {
 }
 .top {
   height: 200px;
+  background: url("img/sample1.jpg") no-repeat center bottom;
   background-color: #fedccc;
   border-radius: 15px 15px 0 0;
 }
-button {
+.top1 {
+  height: 200px;
+
+  background-color: #fedccc;
+  border-radius: 15px 15px 0 0;
+}
+.top2 {
+  height: 200px;
+
+  background-color: #fedccc;
+  border-radius: 15px 15px 0 0;
+}
+
+a {
   font-size: 1.1em;
   color: #000;
   font-family: "Rubik", sans-serif;
@@ -71,21 +86,23 @@ button {
   text-transform: uppercase;
   text-decoration-line: none;
   display: inline-block; /* This line is where the thumbnails flow side by side */
-  padding: 0.75em 3em;
+  text-align: center;
+  padding-top: 25px;
   height: 72px;
   background-color: #AAD4F5;
   border: none;
   border-radius: 0 0 15px 15px;
 }
-.styled:hover {
+
+a:hover {
   background-color: #6EBAF5;
   color: white;
 }
-.styled:active {
+a:active {
   background-color: #AAD4F5;
   color: #000;
 }
-/* ======= This line below, removing blue border button =======* */
-.styled:focus {
+/* ======= This line below, removing blue border button tag =======* */
+/* a:focus {
   outline: 0;
-}
+} */
